@@ -1,0 +1,43 @@
+// Logo styles
+header {
+  a {
+    height: 65px;
+    text-decoration: none;
+
+    .logo1 {
+      max-width: 60px;
+      height: auto;
+    }
+    .logo2 {
+      max-width: 100%;
+      height: 50px;
+    }
+
+    @media (max-width: $tabletLandscape) {
+      .logo1 {
+        max-width: 50px;
+      }
+      .logo2 {
+        height: 40px;
+      }
+    }
+    @media (max-width: $tabletPortrait) {
+      .logo1 {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: $phonePortrait) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .logo1 {
+        max-width: 50px;
+      }
+      .logo2 {
+        height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Coffee Shop</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/cat-coffeeshop-logo-orange.ico"
+      type="image/x-icon"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900|Ubuntu:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="index.html">
+          <img
+            class="logo1"
+            src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/cat-coffeeshop-logo-orange.png"
+            alt="Cat coffee logo"
+          />
+          <img
+            class="logo2"
+            src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/cat&coffee.png"
+            alt="Logo"
+          />
+        </a>
+        <!--End of logo-->
+
+        <button id="menu_btn" class="menu_btn">
+          <span class="button-content">
+            <span class="text">Menu</span>
+            <span class="bar"></span>
+          </span>
+        </button>
+        <!--End of button-->
+
+        <nav id="main-navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="adoption.html">Adoption</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!--End of ul-->
+        </nav>
+        <!--End of nav-->
+      </header>
+      <!--End of header-->
+
+      <main>
+        <h1 class="contact-heading">Contact</h1>
+        <div class="contact-section">
+          <section class="reservation-form">
+            <form action="/" method="POST">
+              <h3>Reserve Your Cuddles Here!</h3>
+
+              <div class="input-group text-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+
+              <div class="input-group email-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="input-group phone-group">
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+
+              <div class="input-group date-group">
+                <label for="date">Date: </label>
+                <input type="date" name="date" id="date" required />
+              </div>
+
+              <div class="input-group time-group">
+                <label for="time">Time: </label>
+                <input type="time" name="time" id="time" required />
+              </div>
+
+              <div class="input-group people-group">
+                <label for="people">Number of people: </label>
+                <select name="people" id="people" required>
+                  <option value="select" selected disabled>Select</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+
+              <div class="radio-group">
+                <label for="lounge">Select your Lounge: </label><br />
+                <input
+                  type="radio"
+                  name="lounge"
+                  id="loungeA"
+                  value="loungeA"
+                />
+                <label for="loungeA">Lounge A</label><br />
+                <input
+                  type="radio"
+                  name="lounge"
+                  id="loungeB"
+                  value="loungeB"
+                />
+                <label for="loungeB">Lounge B</label>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name="car-park"
+                  id="car-park"
+                  value="car-park"
+                />
+                <label for="car-park"
+                  >Please let me know if free parking is available at the booked
+                  time</label
+                >
+              </div>
+
+              <div class="input-group textarea-group">
+                <label for="message">Special Instructions:</label><br />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="60"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="submit-group">
+                <input type="submit" value="Make a Reservation" />
+              </div>
+            </form>
+            <!--End of form-->
+          </section>
+          <!--End of reservation-form section-->
+
+          <section class="contact-detail">
+            <h3>Contact Us</h3>
+            <img
+              src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/map-screen-shot.png"
+              alt="Map Image"
+            />
+            <table>
+              <tr>
+                <td>Address:</td>
+                <td>
+                  333 Cooney Rd., Vancouver,<br />
+                  BC V3B 6N0
+                </td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td>(778)-000-0000</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>ccs@gmail.com</td>
+              </tr>
+            </table>
+
+            <!--End of table-->
+          </section>
+          <!--End of contact-details section-->
+        </div>
+        <!--End of contact-section-->
+      </main>
+      <!--End of main-->
+
+      <footer>
+        <div class="footer-left-column">
+          <div class="open-hours">
+            <table>
+              <caption>
+                <h3>Open Hours</h3>
+              </caption>
+              <tr>
+                <td>Mon - Fri :</td>
+                <td>10:00 am - 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Sat :</td>
+                <td>10:00 am - 9:00 pm</td>
+              </tr>
+
+              <tr>
+                <td>Sun:</td>
+                <td>10:00 am - 8:00 pm</td>
+              </tr>
+            </table>
+
+            <!--End of ul-->
+          </div>
+        </div>
+        <!--End of footer-left-column-->
+
+        <div class="footer-center-column">
+          <div class="social-media">
+            <table>
+              <caption>
+                <h3>Follow us</h3>
+              </caption>
+              <tr>
+                <td>
+                  <a href="https://www.instagram.com/">
+                    <img
+                      src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/instagram.png"
+                      alt="Instagram"
+                  /></a>
+                </td>
+                <td>
+                  <a href="https://www.facebook.com/">
+                    <img
+                      src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/facebook.png"
+                      alt="Facebook"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--End of footer-center-column-->
+
+        <div class="footer-right-column">
+          <div class="address">
+            <table>
+              <caption>
+                <h3>Address</h3>
+              </caption>
+              <tr>
+                <td>
+                  333 Cooney Rd., Vancouver,<br />
+                  BC V3B 6N0
+                  <a
+                    href="https://www.google.com/maps/@49.2779413,-123.157458,11.68z"
+                    ><img
+                      src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/map-icon.svg"
+                      alt="Map Image"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--End of footer-right-column-->
+      </footer>
+      <!--End of footer-->
+      <div class="copy-right">
+        <p>&copy; 2019</p>
+        <a href="credit.html"> <p>Image credits</p></a>
+      </div>
+    </div>
+    <!--End of wrapper-->
+
+    <!-- script -->
+    <script src="scripts/script.js"></script>
+  </body>
+  <!--End of body-->
+</html>
+<!--End of html-->

@@ -1,0 +1,13 @@
+//Typography Styles
+body {
+  font-family: $header-font;
+}
+p,
+button {
+  font-family: $opening-font;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: $line-height;
+}

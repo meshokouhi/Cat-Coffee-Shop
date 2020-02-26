@@ -1,0 +1,123 @@
+// Adoption page body style
+.adoption-introduction {
+  text-align: center;
+}
+
+.adoption-introduction h1 {
+  margin-bottom: 30px;
+  font-family: $header-font;
+}
+.adoption-p p {
+  color: rgb(71, 70, 70);
+  padding: 0 auto;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-family: $opening-font;
+}
+
+.donation-section {
+  margin-bottom: 20px;
+  position: relative;
+}
+.donation-form {
+  border: 1px solid rgb(119, 118, 116);
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+}
+.donation-form input {
+  width: 100%;
+  font-size: 1em;
+  padding: 10px 2px;
+  margin: 4px 2px;
+  outline: none;
+  border-radius: 4px;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+.donation-form h1 {
+  margin: 10px;
+}
+.donation-form h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.donation-inputs-value section {
+  border: 1px solid rgb(119, 118, 116);
+}
+
+select {
+  width: 100%;
+  font-size: 1em;
+}
+
+#adoption-sub-btn {
+  padding: 6px 10px;
+  margin: 4px 2px;
+  margin-top: 20px;
+  background-color: #ff9800;
+  font-size: 1.2em;
+  cursor: pointer;
+  #{$link-hover-selector} {
+    background-color: rgba(119, 118, 116, 0.548);
+  }
+}
+// Adoption page body style end
+
+// adoption page min-width 500px
+@media (min-width: 500px) {
+  .adoption-contact {
+    margin-top: 5%;
+  }
+}
+// adoption page min-width 600px
+@media (min-width: 600px) {
+  .adoption-p p {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  .donation-section {
+    display: flex;
+  }
+}
+
+// adoption page min-width 800px
+@media (min-width: 800px) {
+  .adoption-contact {
+    font-size: 1.3em;
+  }
+}
+
+// adoption page min-width 1000px
+@media (min-width: 1000px) {
+  .adoption-introduction h1 {
+    font-size: 2em;
+  }
+  .donation-form {
+    width: 50%;
+    margin-left: 8%;
+  }
+
+  .adoption-contact {
+    font-size: 1.5em;
+  }
+}

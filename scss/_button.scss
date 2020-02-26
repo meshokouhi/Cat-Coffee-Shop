@@ -1,0 +1,85 @@
+//Booknow button Styles
+.booknow-btn button {
+  padding: 16px;
+  background-color: #ff9800;
+  border-radius: 10px;
+  font-size: 1.5em;
+
+  #{$link-hover-selector} {
+    background-color: rgb(192, 191, 190);
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    cursor: pointer;
+  }
+
+  @media (max-width: $phoneLandscape) {
+    font-size: 1em;
+  }
+}
+
+// adoption page back to top button style
+
+#back-to-top-button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 120px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  padding-top: 5px;
+}
+
+#back-to-top-button::after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#back-to-top-button:hover {
+  cursor: pointer;
+  background-color: rgba(122, 122, 122, 0.788);
+}
+#back-to-top-button:active {
+  background-color: #555;
+}
+#back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// adoption page back to top button style end
+
+// Donate button style
+.donate-btn {
+  cursor: pointer;
+  outline: none;
+  display: block;
+  padding: 15px;
+  border: 1px solid rgb(252, 250, 248);
+  border-radius: 10px;
+  margin-left: 8%;
+  background-color: #ff9800;
+  transition: background 500ms ease;
+}
+.donate-btn:hover,
+.donate-btn:active,
+.donate-btn:focus {
+  background-color: rgba(192, 191, 190, 0.822);
+}
+
+// donation button min-width 800px
+@media (min-width: 800px) {
+  .donate-btn {
+    padding: 20px;
+    font-size: 1em;
+  }
+}

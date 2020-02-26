@@ -1,0 +1,21 @@
+//copy right section Styles
+
+.copy-right {
+  text-align: center;
+  font-size: 1.2em;
+
+  a {
+    color: #ff9800;
+    text-decoration: none;
+    outline: none;
+
+    #{$link-hover-selector} {
+      background-color: rgb(119, 118, 116);
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: $tabletLandscape) {
+    font-size: 0.9em;
+  }
+}

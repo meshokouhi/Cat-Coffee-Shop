@@ -1,0 +1,331 @@
+/* modules style  */
+html {
+  font-family: $opening-font;
+}
+.modules {
+  background-image: url(../images/best-cat-coffee-shop-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: {
+    left: 40px;
+    right: 40px;
+    top: 20px;
+    bottom: 40px;
+  }
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+}
+.modules-title {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1rem;
+  padding: {
+    top: 30px;
+    bottom: 30px;
+  }
+}
+.menu {
+  background: rgba(245, 239, 239, 0.8);
+  padding: {
+    bottom: 30px;
+  }
+  table {
+    width: 100%;
+  }
+
+  td {
+    font-size: 1em;
+    padding: {
+      top: 30px;
+      bottom: 20px;
+    }
+  }
+
+  tr {
+    td:last-child {
+      text-align: right;
+      padding-right: 60px;
+      padding-left: 0px;
+    }
+    td:first-child {
+      text-align: left;
+      padding-left: 60px;
+      padding-right: 0px;
+    }
+  }
+
+  caption {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 1.2em;
+    padding: {
+      left: 60px;
+      bottom: 10px;
+      top: 30px;
+    }
+  }
+}
+.description {
+  margin-top: 20px;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* end--main style  */
+
+/* Media Queries */
+@media only screen and (max-width: $desktopMedium) {
+  .modules {
+    padding: {
+      left: 20px;
+      right: 20px;
+      top: 10px;
+      bottom: 20px;
+    }
+    grid-column-gap: 20px;
+  }
+
+  td {
+    padding: {
+      top: 20px;
+      bottom: 10px;
+      right: 0px;
+      left: 0px;
+    }
+  }
+
+  tr {
+    td:last-child {
+      padding-right: 40px;
+    }
+
+    td:first-child {
+      padding-left: 40px;
+    }
+  }
+
+  caption {
+    padding: {
+      left: 40px;
+    }
+  }
+
+  .description {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: $tabletLandscape) {
+  .menu {
+    font-size: 0.9rem;
+
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 20px;
+      }
+
+      td:first-child {
+        padding-left: 20px;
+      }
+    }
+
+    caption {
+      padding: {
+        left: 20px;
+      }
+    }
+  }
+
+  .description {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: $tabletPortrait) {
+  .menu {
+    font-size: 0.9rem;
+    padding: {
+      bottom: 30px;
+    }
+
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 20px;
+      }
+
+      td:first-child {
+        padding-left: 20px;
+      }
+    }
+
+    caption {
+      padding: {
+        left: 20px;
+      }
+    }
+  }
+
+  .description {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .modules {
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
+    padding: {
+      left: 70px;
+      right: 70px;
+      top: 10px;
+      bottom: 40px;
+    }
+    font-size: 1rem;
+
+    .modules-title {
+      grid-column: span 3;
+      padding-bottom: 0;
+    }
+    .m-01 {
+      grid-column: span 3;
+    }
+    .m-02 {
+      grid-column: span 3;
+    }
+    .m-03 {
+      grid-column: span 3;
+    }
+    caption {
+      padding-left: 70px;
+    }
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 70px;
+      }
+
+      td:first-child {
+        padding-left: 70px;
+      }
+    }
+  }
+  .description {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .modules {
+    padding: {
+      left: 40px;
+      right: 40px;
+      top: 10px;
+      bottom: 40px;
+    }
+
+    caption {
+      padding-left: 40px;
+    }
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 40px;
+      }
+
+      td:first-child {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  .description {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $phonePortrait) {
+  .modules {
+    grid-row-gap: 40px;
+    padding: {
+      left: 20px;
+      right: 20px;
+      top: 10px;
+      bottom: 30px;
+    }
+    font-size: 1rem;
+
+    caption {
+      padding-left: 10px;
+    }
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 10px;
+      }
+
+      td:first-child {
+        padding-left: 10px;
+      }
+    }
+  }
+  .description {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .modules {
+    font-size: 0.8rem;
+
+    caption {
+      padding-left: 5px;
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 5px;
+      }
+
+      td:first-child {
+        padding-left: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+// Home page Banner section Styles
+
+.banner {
+  background-attachment: fixed;
+  .banner-image {
+    position: relative;
+    background-image: linear-gradient(rgba(white, 0.6), rgba(white, 0.6)),
+      url("http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/cat-coffee-shop-banner.jpg");
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-text {
+    @include flex-center;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-family: $header-font;
+      text-shadow: 0 0 3px #fff;
+    }
+
+    @media (max-width: $tabletPortrait) {
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      p {
+        font-size: 1.5em;
+      }
+    }
+
+    @media (max-width: $phoneLandscape) {
+      position: absolute;
+      bottom: -15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+}

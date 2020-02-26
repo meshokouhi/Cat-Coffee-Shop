@@ -1,0 +1,46 @@
+//Footer Styles
+
+footer {
+  margin: 0 auto;
+  padding: $padding/2;
+  border-top: 1px solid #000000;
+  @include flex-layout-row;
+
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  .social-media {
+    img:first-child {
+      max-width: 80px;
+      height: 70px;
+    }
+    img:last-child {
+      max-width: 80px;
+      height: 70px;
+    }
+  }
+
+  .address {
+    img {
+      max-width: 25px;
+    }
+  }
+}
+
+@media (max-width: $tabletPortrait) {
+  footer {
+    @include flex-center;
+  }
+}
+
+@media (max-width: $phoneLandscape) {
+  footer {
+    h3 {
+      font-size: 0.5em;
+    }
+  }
+}

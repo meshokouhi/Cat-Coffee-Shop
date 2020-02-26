@@ -1,0 +1,7 @@
+// header styles
+header {
+  @include flex-layout-row;
+  padding: $padding/2 $padding;
+  align-items: center;
+  margin-top: 10px;
+}

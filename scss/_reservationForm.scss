@@ -1,0 +1,72 @@
+// Rservation form Styles
+.input-group {
+  padding: 10px;
+  font-size: 1.3em;
+  text-align: left;
+  width: 100%;
+
+  input:not([type="radio"]):not([type="checkbox"]),
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px 2px;
+    margin: 4px 2px;
+    font-size: 0.7em;
+    outline: none;
+    border-radius: 4px;
+  }
+}
+
+.people-group {
+  select {
+    font-size: 1em;
+  }
+}
+.textarea-group {
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.submit-group {
+  input {
+    font-size: 1.3em;
+    width: 100%;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #ff9800;
+
+    #{$link-hover-selector} {
+      background-color: rgba(119, 118, 116, 0.548);
+      transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    }
+  }
+}
+
+.radio-group {
+  padding: 12px;
+  font-size: 1.3em;
+  text-align: left;
+  width: 100%;
+
+  input {
+    margin: 18px;
+    font-size: 0.6em;
+    outline: none;
+  }
+}
+
+.checkbox-group {
+  font-size: 1.3em;
+  padding: 12px;
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: $phoneLandscape) {
+  .input-group,
+  .checkbox-group,
+  .radio-group {
+    font-size: 1.2em;
+  }
+}
